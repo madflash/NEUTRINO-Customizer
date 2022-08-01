@@ -13,18 +13,18 @@ in Japanese:
 
 ## How to use
 in English:
-1. Double click the "NC_Customizer.bat" file.
+1. Double click the "setting.txt" file to open by some editor.
 2. Input score name and VC name.
 3. Done.
 
 in Japanese:
-1. "NC_Customizer.bat"ファイルをダブルクリックで起動します。
+1. "setting.txt"ファイルをダブルクリックで起動します。
 2. scoreファイルネームとボーカル名を入力します。
-3. scoreフォルダに出来上がり。
+3. scoreフォルダにwavファイルが出来上がり。
 
 ## Settings
 in English:
-1. Open the "NC_Customizer.bat" file by notepad or something cording tool.
+1. Open the "setting.txt" file by notepad or something cording tool.
 2. Change bottom codes.
 
 set ENABLE_SKIP=0  
