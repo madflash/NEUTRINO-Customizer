@@ -39,24 +39,24 @@ in English:
 1. Open the "setting.txt" file by notepad or something cording tool.
 2. Change bottom codes.
 
-ENABLE_SKIP=0  
--> When set 1 to skip dialog and user input.  
-ENABLE_OUTPUTNAME=1  
--> When set 1 to change output file names.  
 DEFAULT_NAME_SCORE=score  
 -> Please set it up to score file's name. (default)  
 DEFAULT_NAME_VC=MERROW  
 -> Please set it up to Vocaloid's name. (default)  
+ENABLE_SKIP=0  
+-> When set 1 to skip dialog and user input.  
+ENABLE_OUTPUTNAME=1  
+-> When set 1 to change output file names.  
 
 in Japanese:
 1. "setting.txt"ファイルをメモ帳やコーディングツールで開きます。
 2. 下のコードを変更します。
 
-ENABLE_SKIP=0  
--> 1に設定すると、ダイアログとユーザ入力をスキップします。  
-ENABLE_OUTPUTNAME=1  
--> 1を指定すると、出力ファイル名を変更する。  
 DEFAULT_NAME_SCORE=score  
 -> スコアファイル名を設定してください。(デフォルト)  
 DEFAULT_NAME_VC=MERROW  
 -> ボーカルの名前を設定します。(デフォルト)  
+ENABLE_SKIP=0  
+-> 1に設定すると、ダイアログとユーザ入力をスキップします。  
+ENABLE_OUTPUTNAME=1  
+-> 1を指定すると、出力ファイル名を変更する。  
