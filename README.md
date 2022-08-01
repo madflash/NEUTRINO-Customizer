@@ -13,13 +13,13 @@ in Japanese:
 
 ## How to use
 in English:
-1. Double click the "setting.txt" file to open by some editor.
-2. Input score name and VC name.
+1. Double click the "NC_Customizer.bat" file to run.
+2. Input Score's name and VC's name on dialog style.
 3. Done.
 
 in Japanese:
-1. "setting.txt"ファイルをダブルクリックで起動します。
-2. scoreファイルネームとボーカル名を入力します。
+1. "NC_Customizer.bat"ファイルをダブルクリックで起動します。
+2. ダイアログでscoreファイルネームとボーカル名を入力します。
 3. scoreフォルダにwavファイルが出来上がり。
 
 ## Settings
@@ -37,7 +37,7 @@ set DEFAULT_NAME_VC=MERROW
 -> Please set it up to Vocaloid's name. (default)  
 
 in Japanese:
-1. #NC_Customizer.bat"ファイルをメモ帳やコーディングツールで開きます。
+1. "setting.txt"ファイルをメモ帳やコーディングツールで開きます。
 2. 下のコードを変更します。
 
 set ENABLE_SKIP=0  
