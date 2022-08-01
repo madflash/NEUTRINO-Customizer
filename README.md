@@ -1,5 +1,6 @@
-# NEUTRINOCustomizer
-CustomizerBatFile for NEUTRINO
+# NEUTRINO Customizer patch
+NEUTRINO Customizer patch for NEUTRINO  
+NEUTRINOカスタマイズ拡張パッチ
 
 ## How to Install
 in English:
@@ -14,12 +15,12 @@ in Japanese:
 in English:
 1. Double click the "NC_Customizer.bat" file.
 2. Input score name and VC name.
-3. Done
+3. Done.
 
 in Japanese:
 1. "NC_Customizer.bat"ファイルをダブルクリックで起動します。
 2. scoreファイルネームとボーカル名を入力します。
-3. scoreフォルダにwavファイルが出来上がり
+3. scoreフォルダに出来上がり。
 
 ## Settings
 in English:
@@ -50,9 +51,9 @@ set DEFAULT_NAME_VC=MERROW
 
 ## Function
 in English:
-1. Input and specify the score file name and vocal name in the dialog box.
-2. Export a wav file name in the format "score file name_vocal name_yyyyymmddhhssmmss".
+* Input and specify the score file name and vocal name in the dialog box.
+* Export a wav file name in the format "score file name_vocal name_yyyyymmddhhssmmss".
 
 in Japanese:
-1. ダイアログで、スコアファイル名やボーカル名を入力指定します。
-2. wavファイル名を「スコアファイル名_ボーカル名_yyyymmddhhssmmss」の形式で書き出します。
+* ダイアログで、スコアファイル名やボーカル名を入力指定します。
+* wavファイル名を「スコアファイル名_ボーカル名_yyyymmddhhssmmss」の形式で書き出します。
