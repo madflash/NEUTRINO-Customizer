@@ -1,4 +1,4 @@
-# NEUTRINOCustomizer
+# NEUTRINO Customizer patch
 CustomizerBatFile for NEUTRINO
 
 ## How to Install
