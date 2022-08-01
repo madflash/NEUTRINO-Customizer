@@ -1,12 +1,15 @@
 @echo off
 
-@rem -----set params-----
-set ENABLE_SKIP=0
-set ENABLE_OUTPUTNAME=1
-set DEFAULT_NAME_SCORE=score
-set DEFAULT_NAME_VC=MERROW
-@rem -----set params-----
-set TESTMODE=0
+set DEFAULT_NAME_SCORE=
+set DEFAULT_NAME_VC=
+set ENABLE_SKIP=
+set ENABLE_OUTPUTNAME=
+set TESTMODE=
+
+: INIT
+setlocal enabledelayedexpansion
+cd /d %~dp0
+for /f "usebackq delims== tokens=1,2" %%a in ("setting.txt") do set %%a=%%b
 
 : START
 echo  NEUTRINO Optimizer for ver Electron v1.1.0
@@ -50,16 +53,19 @@ set /p NAME_VC=
 goto :INPUT_VC
 
 : INPUT_END
-echo +-------------------------------------------------------+
-echo  call Run.bat
-echo +-------------------------------------------------------+
 @rem change OUTPUTNAME
 set "%ENABLE_OUTPUTNAME%"=="1"(
   set tmptime=%time: =0%
   set NAME_OUTPUT=%NAME_SCORE%_%NAME_VC%_%date:~0,4%%date:~5,2%%date:~8,2%%tmptime:~0,2%%tmptime:~3,2%%tmptime:~6,2%
 )
 if %TESTMODE%==1 goto :CALL_TEST
+echo +-------------------------------------------------------+
+echo  call NC_Run.bat
+echo +-------------------------------------------------------+
 call NC_Run.bat %NAME_SCORE% %NAME_VC% %NAME_OUTPUT%
 
 : CALL_TEST
+echo +-------------------------------------------------------+
+echo  call test.bat
+echo +-------------------------------------------------------+
 call test.bat %NAME_SCORE% %NAME_VC% %NAME_OUTPUT%
