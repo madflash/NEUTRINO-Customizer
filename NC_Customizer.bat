@@ -33,7 +33,7 @@ echo +-------------------------------------------------------+
 choice
 if %errorlevel%==1 goto :INPUT_VC
 echo +-------------------------------------------------------+
-echo  Scorefile's name?
+echo  Score file's name?
 echo +-------------------------------------------------------+
 set NAME_SCORE=
 set /p NAME_SCORE=
