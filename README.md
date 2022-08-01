@@ -1,5 +1,8 @@
 # NEUTRINO Customizer patch
-CustomizerBatFile for NEUTRINO
+in English:  
+NEUTRINO Customizer patch for NEUTRINO  
+in Japanese:  
+NEUTRINOカスタマイズ拡張パッチ
 
 ## How to Install
 in English:
