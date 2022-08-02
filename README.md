@@ -44,9 +44,9 @@ DEFAULT_NAME_SCORE=score
 DEFAULT_NAME_VC=MERROW  
 -> Please set it up to Vocaloid's name. (default)  
 ENABLE_SKIP=0  
--> If set to 1, to skip dialog and user input.  
+-> If set to 1, skip dialogs and user input.  
 ENABLE_OUTPUTNAME=1  
--> If set to 1, change output file names.  
+-> If set to 1, do change output file names.  
 
 in Japanese:
 1. "setting.txt"ファイルをメモ帳やコーディングツールで開きます。
@@ -57,6 +57,6 @@ DEFAULT_NAME_SCORE=score
 DEFAULT_NAME_VC=MERROW  
 -> ボーカルの名前を設定します。(デフォルト)  
 ENABLE_SKIP=0  
--> 1に設定すると、ダイアログとユーザ入力をスキップします。  
+-> 1を指定すると、ダイアログとユーザ入力をスキップします。  
 ENABLE_OUTPUTNAME=1  
--> 1を指定すると、出力ファイル名を変更する。  
+-> 1を指定すると、出力ファイル名を変更します。  
