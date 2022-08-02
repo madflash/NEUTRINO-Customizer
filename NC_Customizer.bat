@@ -4,7 +4,7 @@ set DEFAULT_NAME_SCORE=
 set DEFAULT_NAME_VC=
 set ENABLE_SKIP=
 set ENABLE_OUTPUTNAME=
-set TESTMODE=
+set ENABLE_TESTMODE=
 
 : INIT
 setlocal enabledelayedexpansion
@@ -37,7 +37,7 @@ echo  Score file's name?
 echo +-------------------------------------------------------+
 set NAME_SCORE=
 set /p NAME_SCORE=
-goto :INPUT_SCORE
+goto :INPUT_VC
 
 : INPUT_VC
 echo +-------------------------------------------------------+
@@ -50,7 +50,7 @@ echo  VC's name?
 echo +-------------------------------------------------------+
 set NAME_VC=
 set /p NAME_VC=
-goto :INPUT_VC
+goto :INPUT_CONF
 
 : INPUT_END
 @rem change OUTPUTNAME
@@ -58,14 +58,14 @@ set "%ENABLE_OUTPUTNAME%"=="1"(
   set tmptime=%time: =0%
   set NAME_OUTPUT=%NAME_SCORE%_%NAME_VC%_%date:~0,4%%date:~5,2%%date:~8,2%%tmptime:~0,2%%tmptime:~3,2%%tmptime:~6,2%
 )
-if %TESTMODE%==1 goto :CALL_TEST
+if %ENABLE_TESTMODE%==1 goto :CALL_TEST
 echo +-------------------------------------------------------+
 echo  call NC_Run.bat
 echo +-------------------------------------------------------+
-call NC_Run.bat %NAME_SCORE% %NAME_VC% %NAME_OUTPUT%
+call NC_Run.bat %NAME_SCORE% %NAME_VC% %ENABLE_SKIP% %NAME_OUTPUT%
 
 : CALL_TEST
 echo +-------------------------------------------------------+
 echo  call test.bat
 echo +-------------------------------------------------------+
-call test.bat %NAME_SCORE% %NAME_VC% %NAME_OUTPUT%
+call test.bat %NAME_SCORE% %NAME_VC% %ENABLE_SKIP% %NAME_OUTPUT%

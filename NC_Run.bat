@@ -3,6 +3,7 @@
 @rem -----for NEUTRINO Customizer START-----
 set DEFAULT_NAME_SCORE=score
 set DEFAULT_NAME_VC=MERROW
+set ENABLE_SKIP=
 set NAME_OUTPUT=
 
 if "%1"=="" (
@@ -13,7 +14,8 @@ if "%1"=="" (
 ) else (
   set NAME_SCORE=%1
   set NAME_VC=%2
-  set NAME_OUTPUT=%3
+  set ENABLE_SKIP=%3
+  set NAME_OUTPUT=%4
 )
 @rem -----for NEUTRINO Customizer END-----
 
@@ -68,9 +70,6 @@ bin\NSF.exe score\label\full\%BASENAME%.lab score\label\timing\%BASENAME%.lab ou
 
 echo %date% %time% : end
 
-if not %errorlevel%==""(
-  echo %errorlevel%
-)
-
+if %ENABLE_SKIP%==1 EXIT
 PAUSE
 EXIT
